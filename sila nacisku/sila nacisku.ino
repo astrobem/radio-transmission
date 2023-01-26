@@ -1,7 +1,7 @@
 #define FORCE_SENSOR_PIN A0 // the FSR and 10K pulldown are connected to A0
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
