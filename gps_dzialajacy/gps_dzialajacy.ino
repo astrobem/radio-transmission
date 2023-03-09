@@ -65,28 +65,3 @@ void displayInfo()
   }
 
 }
-
-void updateSerial()
-
-{
-
-  delay(500);
-
-  while (SerialUSB.available())
-
-  {
-
-    Serial1.write(SerialUSB.read());//Forward what Serial received to Software Serial Port
-
-  }
-
-  while (Serial1.available())
-
-  {
-
-    SerialUSB.write(Serial1.read());//Forward what Software Serial received to Serial Port
-
-  }
-
-}
-    
